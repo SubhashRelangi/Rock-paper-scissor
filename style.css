@@ -1,0 +1,54 @@
+*{
+
+  background-color: black;
+
+}
+.name{
+  color:white;
+}
+.icon{
+  height:40px;
+}
+.pics{
+  height:50%;
+  width:50%;
+}
+.buttons{
+  height:70px;
+  width:70px;
+  border-radius: 40px;;
+  background-color: black;
+  color:white;
+  border:2px solid white
+}
+.result{
+  font-size: 30px;
+  color:white
+}
+.choices{
+  color:white;
+  font-size: 20px;
+}
+.scores{
+  font-size: 20px;;
+  color:white;
+}
+.reset,.autoplay{
+  height:30px;
+  width:100px;
+  background-color: white;
+  color:BLACK;
+  border:2px solid white;
+}
+
+#yes-button,#no-button{
+  height:30px;
+  width:100px;
+  background-color: white;
+  color:BLACK;
+  border:2px solid white;
+}
+#paragraph{
+  color :white;
+  font-weight: bold;
+}
