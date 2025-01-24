@@ -117,9 +117,9 @@ let score = JSON.parse(localStorage.getItem('score')) ||   {
 
                 document.querySelector('.choices')
                 .innerHTML=`you pick 
-                <img src="${move}-emoji.jpg" class="icon">- 
+                <img src="pictures/${move}-emoji.jpg" class="icon">- 
                 computer picks 
-                <img src="${computermove}-emoji.jpg" class="icon">`;
+                <img src="pictures/${computermove}-emoji.jpg" class="icon">`;
 
                 updatescore();
 
@@ -150,14 +150,16 @@ let score = JSON.parse(localStorage.getItem('score')) ||   {
     function print() {
     let var3 = '';
     let list = '';
-    list = `<div>
+    list = `<div class="verification">
        <p id="paragraph">Do You Want To Reset Your Score</p>
-       <button id="yes-button">YES</button>
+       <button id="yes-button" onclick="yes()">YES</button>
        <button id="no-button">NO</button>
     </div>`;
      document.querySelector('#div-button').innerHTML = list;
      document.querySelector('#yes-button').addEventListener('click',() => {
      resetbutton();
+     const display = document.querySelector('.verification');
+     display.style.display = "none";
      }); 
      document.querySelector('#no-button').addEventListener('click',() => {
        document.querySelector('#div-button').innerHTML = var3;
