@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>rock paper scissors game</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <h1 class="name">Shall we play rock paper scissors game</h1>
-  <button class="buttons" id="rock-button"
-  ><img src="pictures/rock-emoji.jpg" class="pics"></button>
-  <button class="buttons" id="paper-button"
-  ><img src="pictures/paper-emoji.jpg" class="pics"></button>
-  <button class="buttons" id="scissor-button"
-  ><img src="pictures/scissor-emoji.jpg" class="pics"></button>
+  <div class="buttons-container">
+    <div class="buttons-div">
+      <button class="buttons" id="rock-button"><img src="pictures/rock-emoji.jpg" class="pics"></button>
+      <button class="buttons" id="paper-button"><img src="pictures/paper-emoji.jpg" class="pics"></button>
+      <button class="buttons" id="scissor-button"><img src="pictures/scissor-emoji.jpg" class="pics"></button>
+    </div>
+  </div>
 
   <p class="result"></p>
   <p class="choices"></p>
-  <p class="scores">wins:0,loses:0,ties:0  </p>
+  <p class="scores">wins:0, loses:0, ties:0 </p>
 
-  <button class="reset" id="reset-button">Reset Score</button>
+  <div class="buttons-container">
+    <div class="buttons-div">
+      <button class="reset" id="reset-button">Reset Score</button>
 
-  <button  class="autoplay" id="autoplay-button">Auto play</button>
-  
-  <div id="div-button"></div>
-  
+      <button class="autoplay" id="autoplay-button">Auto play</button>
+
+    </div>
+  </div>
+  <div class="buttons-container">
+    <div id="div-button"></div>
+  </div>
+
+
   <script src="main.js"></script>
-  </body>
-  </html>
+</body>
+
+</html>
